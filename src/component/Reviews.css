@@ -1,0 +1,14 @@
+.reviews {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .reviews ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reviews li {
+    margin: 10px 0;
+  }
+  

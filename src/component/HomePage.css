@@ -1,0 +1,13 @@
+.homepage {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: '/image/res.jpg';
+
+  }
+  
+  .hero-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  

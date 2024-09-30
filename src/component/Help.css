@@ -1,0 +1,14 @@
+.help {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .help ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .help li {
+    margin: 10px 0;
+  }
+  

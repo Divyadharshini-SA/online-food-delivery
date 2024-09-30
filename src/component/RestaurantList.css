@@ -1,0 +1,21 @@
+.restaurant-list {
+    text-align: center;
+  }
+  
+  .restaurants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .restaurant {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .restaurant img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  

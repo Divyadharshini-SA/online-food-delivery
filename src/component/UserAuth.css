@@ -1,0 +1,35 @@
+.user-auth {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .user-auth h2 {
+    margin-bottom: 20px;
+  }
+  
+  .user-auth label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-auth input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .user-auth button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+

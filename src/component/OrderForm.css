@@ -1,0 +1,36 @@
+.order-form {
+    background-color:azure;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    
+    .order-form h2 {
+      margin-bottom: 20px;
+    }
+    
+    .order-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .order-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .order-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4500;
+      color: solid;
+      border: none;
+      border-radius: 5px;
+    }
+    
+  
