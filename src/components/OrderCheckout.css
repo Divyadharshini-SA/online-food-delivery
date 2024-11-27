@@ -1,0 +1,198 @@
+/* OrderCheckout.css */
+.order-checkout-container {
+  max-width: 600px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the content */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+  text-align: center; /* Center the main heading */
+  color: #333; /* Dark gray color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+h3 {
+  color: #555; /* Slightly lighter gray */
+  margin-top: 20px; /* Space above subheadings */
+}
+
+.order-checkout-form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space below each form group */
+}
+
+.form-group label {
+  display: block; /* Block display for labels */
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 5px; /* Space below labels */
+  color: #333; /* Dark gray for text */
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group textarea,
+.form-group select {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.form-group input[type="radio"] {
+  margin-right: 10px; /* Space between radio button and label */
+}
+
+.order-checkout-btn {
+  width: 100%; /* Full width button */
+  padding: 12px; /* Padding inside button */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  margin-top: 20px; /* Space above button */
+}
+
+.order-checkout-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error {
+  color: red; /* Red color for error messages */
+  text-align: center; /* Center error text */
+  margin-bottom: 10px; /* Space below error message */
+}
+
+.success {
+  color: green; /* Green color for success messages */
+  text-align: center; /* Center success text */
+  margin-bottom: 10px; /* Space below success message */
+}
+
+@media (max-width: 768px) {
+  .order-checkout-container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .order-checkout-btn {
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+}
+
+
+
+
+/* .order-checkout-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.order-checkout-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order-checkout-btn {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-checkout-btn:disabled {
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+ */
+
+
+
+
+/* src/components/OrderCheckout.css
+.checkout {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .checkout h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkout button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .checkout button:hover {
+    background-color: #218838;
+  }
+   */

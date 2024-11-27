@@ -1,0 +1,49 @@
+.header {
+  background-color: #333; /* Dark background for the header */
+  color: white; /* White text color */
+  padding: 15px; /* Padding around the header */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between header elements */
+  align-items: center; /* Center items vertically */
+}
+
+.header h1 {
+  margin: 0;
+  color:#ffbb33 /* Remove default margin */
+}
+
+.header nav {
+  display: flex; /* Use flexbox for nav items */
+  align-items: center; /* Center items vertically in the nav */
+}
+
+.header nav a {
+  color: white; /* White text for navigation links */
+  margin-left: 20px; /* Space between links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.header nav a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.auth-button {
+  margin-left: 20px; /* Add some space before the button */
+}
+
+.auth-button button {
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #ffdd57; /* Light yellow background for button */
+  color: #1144aa; /* Dark blue text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 16px; /* Font size for the button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.auth-button button:hover {
+  background-color: #ffbb33; /* Darker yellow on hover */
+}
+
+

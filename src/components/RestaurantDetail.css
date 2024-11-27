@@ -1,0 +1,73 @@
+.restaurant-detail {
+  max-width: 1200px; /* Set a max width for the restaurant detail */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding for spacing */
+  font-family: 'Arial', sans-serif; /* Set a font family */
+}
+
+.restaurant-detail h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Darker color for the heading */
+  margin-bottom: 30px; /* Add space below the heading */
+  font-size: 2.5rem; /* Font size for the heading */
+}
+
+.menu-list {
+  display: grid; /* Use grid layout for the menu items */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Gap between items */
+}
+
+.menu-item {
+  border: 1px solid #ddd; /* Light border around each item */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Transition for hover effect */
+  background-color: #fff; /* White background for items */
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.menu-item img {
+  width: 100%; /* Responsive image */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.menu-item h3 {
+  font-size: 1.5rem; /* Font size for item name */
+  margin: 10px 0; /* Margin above and below item name */
+  text-align: center; /* Center the item name */
+}
+
+.menu-item p {
+  color: #666; /* Lighter color for description */
+  text-align: center; /* Center the description */
+  margin: 10px 0; /* Margin above and below description */
+}
+
+.menu-item .price {
+  font-weight: bold; /* Bold font for price */
+  text-align: center; /* Center the price */
+  margin-bottom: 10px; /* Space below price */
+}
+
+.add-to-cart {
+  display: block; /* Make button a block element */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for button */
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  text-align: center; /* Center text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.add-to-cart:hover {
+  background-color: #218838; /* Darker green on hover */
+}

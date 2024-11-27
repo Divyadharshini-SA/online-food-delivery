@@ -1,91 +1,132 @@
 import React, { useState } from 'react';
-import Header from './component/Header';
-import Footer from './component/Footer';
-import HomePage from './component/HomePage';
-import RestaurantList from './component/RestaurantList';
-import OrderForm from './component/OrderForm';
-import UserAuth from './component/UserAuth';
-import Reviews from './component/Reviews';
-import Help from './component/Help';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import Header from './components/Header';
+import RestaurantList from './components/RestaurantList';
+import RestaurantDetail from './components/RestaurantDetail';
+import Cart from './components/Cart';
+import OrderCheckout from './components/OrderCheckout';
+import OrderHistory from './components/OrderHistory';
+import LoginSignUp from './components/LoginSignUp';
+import Footer from './components/Footer';
+import './App.css';
 
-const App = () => {
-  const [currentView, setCurrentView] = useState('home');
+function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const changeView = (newView) => {
-    setCurrentView(newView);
-  };
-
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-  };
-
-  const renderView = () => {
-    switch (currentView) {
-      case 'home':
-        return <HomePage />;
-      case 'restaurants':
-        return <RestaurantList />;
-      case 'order':
-        return <OrderForm />;
-      case 'login':
-        return <UserAuth onLogin={handleLogin} isLoggedIn={isLoggedIn} />;
-      case 'reviews':
-        return <Reviews />;
-      case 'help':
-        return <Help />;
-      default:
-        return <HomePage />;
-    }
+    // Additional logout logic (if needed)
   };
 
   return (
-    <div className="App">
-      <Header 
-        changeView={changeView} 
-        isLoggedIn={isLoggedIn} 
-        onLogout={handleLogout} 
-      />
-      {renderView()}
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/restaurants" element={<RestaurantList />} />
+          <Route path="/restaurant/:id" element={<RestaurantDetail />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<OrderCheckout />} />
+          <Route path="/history" element={<OrderHistory />} />
+          <Route path='/login' element={<LoginSignUp setIsLoggedIn={setIsLoggedIn} />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
 
 
 
 
-
-
-
-// import logo from './logo.svg';
+// import React, { useState } from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import HomePage from './components/HomePage';
+// import Header from './components/Header';
+// import RestaurantList from './components/RestaurantList';
+// import RestaurantDetail from './components/RestaurantDetail';
+// import Cart from './components/Cart';
+// import OrderCheckout from './components/OrderCheckout';
+// import OrderHistory from './components/OrderHistory';
 // import './App.css';
+// import LoginSignUp from './components/LoginSignUp';
+// import Footer from './components/Footer';
 
 // function App() {
+//   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+//   const handleLogout = () => {
+//     setIsLoggedIn(false);
+//     // Additional logout logic (if needed)
+//   };
+
 //   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
+//     <Router>
+//       <div className="App">
+//         <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
+//         <Routes>
+//           <Route path="/" element={<HomePage />} />
+//           <Route path="/restaurantList" element={<RestaurantList />} />
+//           <Route path="/restaurant/:id" element={<RestaurantDetail />} />
+//           <Route path="/cart" element={<Cart />} />
+//           <Route path="/checkout" element={<OrderCheckout />} />
+//           <Route path="/history" element={<OrderHistory />} />
+//           <Route path='/login' element={<LoginSignUp setIsLoggedIn={setIsLoggedIn} />} />
+//         </Routes>
+//         <Footer />
+//       </div>
+//     </Router>
 //   );
 // }
 
 // export default App;
+ 
+
+
+
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import HomePage from './components/HomePage';
+// import Header from './components/Header';
+// import RestaurantList from './components/RestaurantList';
+// import RestaurantDetail from './components/RestaurantDetail';
+// import Cart from './components/Cart';
+// import OrderCheckout from './components/OrderCheckout';
+// import OrderHistory from './components/OrderHistory';
+// import './App.css';
+// import LoginSignUp from './components/LoginSignUp';
+// import Footer from './components/Footer';
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <Header />
+//         <Routes>
+//           <Route path="/" element={<HomePage/>}/>
+//           <Route path="/restaurantList" element={<RestaurantList />} />
+//           <Route path="/restaurant/:id" element={<RestaurantDetail />} />
+//           <Route path="/cart" element={<Cart />} />
+//           <Route path="/checkout" element={<OrderCheckout />} />
+//           <Route path="/history" element={<OrderHistory />} />
+//           <Route path='/login' element={<LoginSignUp/>}/>
+//         </Routes>
+//         <Footer />
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
